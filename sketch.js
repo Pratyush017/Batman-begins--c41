@@ -17,7 +17,7 @@ function draw() {
   batman.display(); 
 
   if(frameCount % 1 === 0){
-    var raindrop = new RainDrops(random(0, windowWidth), -100,10);
+     var raindrop = new RainDrops(random(0, windowWidth), -100,10);
     raindrops.push(raindrop);
   }
 
