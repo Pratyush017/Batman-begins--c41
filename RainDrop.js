@@ -1,11 +1,12 @@
 class RainDrops{
     constructor(x,y,radius){
-        this.body = ellipse(x,y,radius);
+        this.body = Bodies.circle(x,y,radius);
         this.radius = radius;
         this.x = x;
         this.y = y;
         this.velocityY  = random(2,5);
         this.color=color(random(0, 255), random(0, 255), random(0, 255));
+        World.add(world, this.body);
     }
      fall(speed){
         this.y +=speed;
